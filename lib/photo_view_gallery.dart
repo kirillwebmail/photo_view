@@ -224,6 +224,7 @@ class _PhotoViewGalleryState extends State<PhotoViewGallery> {
     return PhotoViewGestureDetectorScope(
       axis: widget.scrollDirection,
       child: PageView.builder(
+        allowImplicitScrolling: true,
         reverse: widget.reverse,
         controller: _controller,
         onPageChanged: widget.onPageChanged,
